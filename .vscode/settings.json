@@ -1,4 +1,28 @@
 {
+    "files.eol": "\n",
+    "files.autoSave": "afterDelay",
+    /*
+        JavaScript
+    */
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true,
+    // フォーマッターをvscode-typescriptに変更
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    // この設定はprettierではなくtypescriptのものです
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    /*
+        Ruby
+    */
     "ruby.lint": {
         "reek": false,
         "rubocop": true,
@@ -7,9 +31,16 @@
         "debride": false,
         "ruby-lint": false
     },
-    "files.autoSave": "afterDelay",
+    /*
+        Python
+    */
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120",
+    ],
+    // Tabsize
     "[python]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
     },
     "[ruby]": {
         "editor.tabSize": 2
@@ -17,8 +48,7 @@
     "[javascript]": {
         "editor.tabSize": 2
     },
-    "python.formatting.autopep8Args": [
-        "--max-line-length",
-        "120",
-    ]
+    "[vue]": {
+        "editor.tabSize": 2
+    }
 }
